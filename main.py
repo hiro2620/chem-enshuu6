@@ -42,7 +42,7 @@ animation = Animation([r_a, r_b], chart_lims, subplot_funcs=[
                       s_a.vp_func, s_b.vp_func])
 animation.create_frame()
 
-step_r: int = 2  # 逆数
+step_r: int = 1  # 逆数
 for T in range((init_temp-target_temp) * step_r, 0, -1):
     solver.change_temp(- 1/step_r)
     animation.create_frame()
