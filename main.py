@@ -1,6 +1,5 @@
 from logging import basicConfig, getLogger, DEBUG, INFO
 
-from matplotlib import animation
 from world import Room, Substance
 from solver import Solver
 from animation import Animation
